@@ -41,3 +41,8 @@
 section#how-it-works-area {
     padding-top: 0;
 }
+
+.hiw-feature-icon img {
+    height: 47px;
+    width: 47px;
+}
