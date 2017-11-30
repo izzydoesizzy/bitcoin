@@ -1,0 +1,43 @@
+
+
+.dark-background {
+    background: rgba(0, 0, 0, 0) url(img/bg/darkbg.jpg) no-repeat scroll center center / cover;
+}
+
+.btn {
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+}
+
+
+.overlay-grad-two:after, .overlay-grad-two:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.9;
+}
+
+.overlay-grad-two::after {
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, #08080a 0%, #585586 100%) repeat scroll 0 0;
+}
+
+#fun-fact-area {
+    background: rgba(0, 0, 0, 0) url(img/bitcoinbg.jpg) no-repeat scroll center bottom;
+    padding: 100px 0 100px;
+} 
+
+#pricing-table-area {
+    background: rgba(0, 0, 0, 0) url(img/bg/bitcoinbg2.jpg) no-repeat scroll center center / cover;
+}
+
+#facts-heading {
+	color:white;
+}
+
+#footer-area {
+    padding-top: 0.5em;
+}
+
+section#how-it-works-area {
+    padding-top: 0;
+}
