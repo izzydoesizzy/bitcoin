@@ -46,3 +46,7 @@ section#how-it-works-area {
     height: 47px;
     width: 47px;
 }
+
+#slider-area.home-style-3 .slider-text {
+    padding-top: 12em;
+}
