@@ -70,7 +70,7 @@
             <nav class="navbar navbar-fixed-top" data-spy="affix" data-offset-top="1">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-tar it="#navigation" aria-expanded="false">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -122,7 +122,7 @@
                         <div class="section-heading shape-2 text-center">
                             <h2>FEATURES</h2>
                            </div>
-                    </div>
+                    </div> 
                 </div>
                 <div class="hiw-feature-content style-2">
                     <div class="hiw-mockup style-2">
@@ -228,40 +228,116 @@
                            </div>
                     </div>
                 </div>
-                <div class="pricing-table-style-2 row">
-                    
-                    
-                    <div class="col-md-4 col-md-offset-2 col-sm-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-                        <div class="single-price-table four text-center transition-3s">
-                            <div class="pricing-head">
-                                <div class="price-tage-wrap">
-                                    <h1 class="price-value transition-3s"><sub class="doller-sign">$</sub>30<sub class="duration">CAD</sub></h1>
-                                </div>
-                                <h5 class="plan-title blue-grad-bg-2">PRE-ORDER TODAY</h5>
-                            </div>
-                            <div class="pricing-content">
-                                <p><strong>What you get:</strong></p>
-                                <ul class="table-content">
-                                    <li>The Collector Bitcoin</li>
-                                    <li>Protective Plastic Coin Casing (removable)</li>
-                                    <li>Luxurious Velvety Collector Coin Box</li>
-
-                                </ul>
-                            </div>
-                            <div class="pricing-footer transition-3s">
-                                <a href="https://gum.co/collectorbitcoin" target="_blank" class="btn btn-style-2 btn-bordered-grad">
-                                    <p class="dsp-tc"><span>PRE-ORDER</span> NOW</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5  col-sm-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
-                        <div class="slider-image wow bounceInRight" data-wow-duration="2s">
-                            <img id="collectorimg" src="img/collector.png" alt="">
-                        </div>
-                    </div>
-                    
-                </div>
+                <div id='product-component-1611117297301'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'collectorbitcoin.myshopify.com',
+      storefrontAccessToken: 'a5f705a52d743feec31cddfb8bcd5f44',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '6249031762095',
+        node: document.getElementById('product-component-1611117297301'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-size": "26px"
+      },
+      "price": {
+        "font-size": "18px"
+      },
+      "compareAt": {
+        "font-size": "15.299999999999999px"
+      },
+      "unitPrice": {
+        "font-size": "15.299999999999999px"
+      }
+    },
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true,
+      "description": true
+    },
+    "width": "100%",
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
             </div>
         </section> -->
         <!-- pricing table area end -->
